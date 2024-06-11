@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<!--HTML COMMAND LIST & INFORMATION:
+        <b>  </b>  means BOLD
+        <i>  </i>  means ITALICS
+        <u>  </u>  means UNDERLINE
+        <head>  </head> contains website info, and is where you load JavaScript and CSS files
+        <body>  </body> contains main content of the webpage
+        <title>  </title> sets title of the tab
+        <h1>  </h1> Heading style 1
+        <h2>  </h2> Heading style 2 (smaller)
+        <h3>  </h3> Heading style 3 (even smaller)
+        <h4>  </h4> Heading style 4 (even more smaller)
+        <h5>  </h5> Heading style 5 (almost normal font size)
+        <h6>  </h6> Heading style 6 (tiny)
+        <p>  </p> Paragraph of text
+        <br> newline
+        <hr> creates a horizontal line (for sectioning)
+        <a> </a> anchors text to some command
+        <ul> <li> </li> </ul> creates an unordered bulleted list (new <li> for each bullet), CAN BE NESTED
+        <ol> <li> </li> </ol> creates an ordered bulleted list (numbers instead of bullets), CAN BE NESTED
+        
+        Creating a 3x2 table:
+            <table border="1">      Initializes the Table with a border of 1
+                <tr>                Creates a row in the table
+                    <th>  </th>     Creates column headers for first row
+                    <th>  </th>
+                </tr>
+                <tr>                Creates another row
+                    <td>  </td>     Creates column data for new row
+                    <td>  </td>
+                </tr>
+                <tr>                Creates another row
+                    <td>  </td>     Creates column data for new row
+                    <td>  </td>
+                </tr>
+            </table>
+-->
+
+<!--CSS COMMAND LIST & INFORMATION:
+        href="LINK URL" target="_blank" -> Used with <a> to create a hyperlink (opens in new tab)
+        name="viewport" content="width=device-width, initial-scale=1" -> sets screen scale
+        border="1" -> Used with <table> to add a table border of 1
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jacob Meredith's Portfolio</title>
+
+        <style>
+            .container {
+                display: flex;
+                justify-content: left; /* Center horizontally */
+                gap: 20px; /* Space between the images */
+            }
+            .container img {
+                width: 300px; /* Adjust the width as needed */
+            }
+
+            .header-text {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Jacob Meredith's Portfolio</h1>
+        <h2>Engineering & Robotics</h2>
+        <i class="header-text">Mechatronics Manual Control Robot:</i>
+        <p>
+            DESCRIPTION
+            <br> <a href="https://google.com" target="_blank"> MORE INFORMATION </a>
+        </p>
+
+        <div class="container">
+            <img src="C:\Users\socce\Desktop\Projects\Engineering & Robotics\Mechatronics Robot\Semi-staged Photo.png" style="width: 250px; height: 250px;">
+            <img src="C:\Users\socce\Desktop\Projects\Engineering & Robotics\Mechatronics Robot\Side View_Mech.png" style="width: 250px; height: 250px;">
+            <img src="C:\Users\socce\Desktop\Projects\Engineering & Robotics\Mechatronics Robot\Top View_Mech.png" style="width: 250px; height: 250px;">
+        </div>
+
+        <br>
+        <br>
+        <i class="header-text">Monoblock Bottle Dispenser, Filler, and Capper:</i>
+        <p>
+            DESCRIPTION
+            <br> <a href="https://google.com" target="_blank"> MORE INFORMATION </a>
+        </p>
+
+        <p>Bill of Materials:</p>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Part</th>
+                <th>Quantity</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Motor</td>
+                <td>1</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Rotary Tables</td>
+                <td>3</td>
+                <td>$50</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Computer Science & Design</h2>
+        <i class="header-text">Western Weaponsmith: Code Arsenal (Educational Game):</i>
+        <p>
+            DESCRIPTION
+            <br> Developers:
+            <ul>
+                <li>Jacob Meredith (jmer@udel.edu)</li>
+                <li>Sibyl Roosen (sibyl@udel.edu)</li>
+            </ul>
+            <br> <a href="https://google.com" target="_blank"> MORE INFORMATION </a>
+        </p>
+
+        <hr>
+
+        <h2>Music</h2>
+        <i class="header-text">Selfish (single):</i>
+        <p>
+            DESCRIPTION
+            <br> <a href="https://google.com" target="_blank"> MORE INFORMATION </a>
+        </p>
+        <i class="header-text">Sleep Drug (single):</i>
+        <p>
+            DESCRIPTION
+            <br> <a href="https://google.com" target="_blank"> MORE INFORMATION </a>
+        </p>
+    </body>
+</html>
