@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!--HTML COMMAND LIST & INFORMATION:
+        <b>  </b>  means BOLD
+        <i>  </i>  means ITALICS
+        <u>  </u>  means UNDERLINE
+        <head>  </head> contains website info, and is where you load JavaScript and CSS files
+        <body>  </body> contains main content of the webpage
+        <title>  </title> sets title of the tab
+        <h1>  </h1> Heading style 1
+        <h2>  </h2> Heading style 2 (smaller)
+        <h3>  </h3> Heading style 3 (even smaller)
+        <h4>  </h4> Heading style 4 (even more smaller)
+        <h5>  </h5> Heading style 5 (almost normal font size)
+        <h6>  </h6> Heading style 6 (tiny)
+        <p>  </p> Paragraph of text
+        <br> newline
+        <hr> creates a horizontal line (for sectioning)
+        <a> </a> anchors text to some command
+        <ul> <li> </li> </ul> creates an unordered bulleted list (new <li> for each bullet), CAN BE NESTED
+        <ol> <li> </li> </ol> creates an ordered bulleted list (numbers instead of bullets), CAN BE NESTED
+        <div> </div>  used to group multiple HTML elements together (say, elements of the same class that all work together or are grouped together)
+        
+        Creating a 3x2 table:
+            <table border="1">      Initializes the Table with a border of 1
+                <tr>                Creates a row in the table
+                    <th>  </th>     Creates column headers for first row
+                    <th>  </th>
+                </tr>
+                <tr>                Creates another row
+                    <td>  </td>     Creates column data for new row
+                    <td>  </td>
+                </tr>
+                <tr>                Creates another row
+                    <td>  </td>     Creates column data for new row
+                    <td>  </td>
+                </tr>
+            </table>
+-->
+
+<!--CSS COMMAND LIST & INFORMATION:
+        href="LINK URL" target="_blank" -> Used with <a> to create a hyperlink (opens in new tab)
+        name="viewport" content="width=device-width, initial-scale=1" -> sets screen scale
+        border="1" -> Used with <table> to add a table border of 1
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jacob Meredith's Portfolio</title>
+
+        <style>
+
+        .beige-square {
+            width: 1175px; /* Set the width of the square */
+            height: 500px; /* Set the height of the square */
+            background-color: #e4cd94; /* Set the background color to beige */
+            border-radius: 15px;
+            position: absolute;
+            top: var(--top, 125px);
+            left: var(--left, 175px);
+        }
+        .rounded-image {
+            border-radius: var(--border-radius, 15px);
+            width: var(--width, 350px);
+            height: var(--height, 350px);
+            object-fit: cover;
+            position: absolute;
+            top: var(--top, 200px);
+            left: var(--left, 375px);
+        }
+
+        .circular-image {
+            border-radius: var(--border-radius, 500px);
+            width: var(--width, 275px);
+            height: var(--height, 275px);
+            object-fit: cover;
+            position: absolute;
+            top: var(--top, 750px);
+            left: var(--left, 275px);
+        }
+
+        .absolute-text-container {
+            position: absolute;
+            width: var(--width, 350px);
+            height: var(--height, 350px);
+            position: absolute;
+            top: var(--top, 215px);
+            left: var(--left, 750px);
+            color:white;
+        }
+
+        .extended-content {
+            height: 750px; /* Increase the height to make the page longer */
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3aadff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e4cd94;
+            padding: 20px 20px;
+            color: rgb(255, 255, 255);
+            position: fixed; /* Keeps the navbar fixed at the top */
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures the navbar is above other content */
+        }
+
+        .navbar-left {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .navbar-right {
+            padding-right: 30px; /* Adds space on the right side */
+        }
+
+        .navbar-right a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            padding-right: 10px;
+        }
+
+        .navbar-right a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #3aadff;
+            width: 220px;
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .button a:hover {
+            text-decoration: underline;
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-left">
+                <span>Jacob Meredith</span>
+            </div>
+            <div class="navbar-right">
+                <a href="#link1">Home</a>
+                <a href="#link2">Projects</a>
+                <a href="#link3">Resume</a>
+                <a href="#link4">Contact Me</a>
+            </div>
+        </div>
+        <div class="beige-square"></div>
+        <img src="C:\Users\socce\Documents\Official Stuff\Portfolio-Website\Headshot.jpg" alt="Headshot" class="rounded-image">
+        <div class="absolute-text-container">
+            <h1>About Me</h1>
+            <p style="font-size: 20px;">Paragraph about me. Paragraph about me. Paragraph about me. Paragraph about me. Paragraph about me. Paragraph about me. Paragraph about me.
+                <br>
+                <br>
+                Make sure to mention I made this website from scratch
+                </p>
+        </div>
+
+        <div class="beige-square" style="--top: 685px; position: relative; z-index: 1;">
+            <!-- Image & Button 1: Engineering & Robotics -->
+            <img src="C:\Users\socce\Documents\Official Stuff\Portfolio-Website\Engineering & Robotics\Monoblock Bottle Filler & Capper\rotary-table-zoom.jpg" 
+                 alt="rot-table" 
+                 class="circular-image" 
+                 style="position: absolute; z-index: 2; top: 60px; left: 80px;">
+            
+            <button class="button" style="position: absolute; z-index: 3; top: 370px; left: 105px; color: white">
+                <a href="#link5">Engineering & Robotics</a>
+            </button>
+
+            <!-- Image & Button 2: Programming & Projects -->
+            <img src="C:\Users\socce\Documents\Official Stuff\Portfolio-Website\Programming Projects\Educational Game\Western Weaponsmith Title.png" 
+                 alt="rot-table" 
+                 class="circular-image" 
+                 style="position: absolute; z-index: 2; top: 60px; left: 445px;">
+            
+            <button class="button" style="position: absolute; z-index: 3; top: 370px; left: 470px; color: white">
+                <a href="#link6">Programming Projects</a>
+            </button>
+
+            <!-- Image & Button 3: Composition & Production-->
+            <img src="C:\Users\socce\Documents\Official Stuff\Portfolio-Website\Music Prod. & Comp.\Selfish Artwork.jpg" 
+                 alt="rot-table" 
+                 class="circular-image" 
+                 style="position: absolute; z-index: 2; top: 60px; left: 810px;">
+            
+            <button class="button" style="position: absolute; z-index: 3; top: 370px; left: 835px; color: white">
+                <a href="#link7">Music Prod. & Comp.</a>
+            </button>
+        </div>
+        
+        <div class="extended-content"></div>
+    </body>
+</html>
